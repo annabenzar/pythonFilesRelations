@@ -1,0 +1,28 @@
+{
+  "id": "CES-python-file-relations",
+  "name": "CES Python File Relations",
+  "description": "This plugin shows relations between python files based on libraries",
+  "version": "1.0.0",
+  "schemaVersion": "1",
+  "icon": "",
+  "commands": [
+    {
+      "id": "python-file-relations",
+      "name": "CES Python File Relations Command",
+      "type": "analyzer",
+      "description": "Generate Python Files relations",
+      "commandTemplate": "java - jar ces-python-files-relations.jar ${outputFile} ${baseFolder}",
+      "configurationFields": [
+        {
+          "id": "baseFolder",
+          "name": "Root Folder",
+          "type": "FOLDER",
+          "description": "The absolute path of zookeeper project",
+          "tooltip": "",
+          "showDescription": false,
+          "required": true
+        }
+      ]
+    }
+  ]
+}
